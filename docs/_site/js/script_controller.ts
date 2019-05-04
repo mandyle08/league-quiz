@@ -22,8 +22,8 @@ Quiz.prototype.isCorrect = function(answer) {
 
   this.questionIndex++;
    if(this.getQuestionIndex.correctAnswer(answer)){
-    
-     this.score++; 
+
+     this.score++;
 
    }
 }

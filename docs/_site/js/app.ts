@@ -1,14 +1,18 @@
 function populate(){
 
   if(quiz.isEnded()){
-    
+
     //showScore();
 
   }else{
 
     // show the next question
-    var element = document.getElementById("questions");    
-    element.innerHTML = quiz.getQuestionIndex().text;
+    let text = "";
+    let question = quiz.getQuestionIndex();
+    $("#questions").text(question.text);
+    for(let i = 0; i < question.choices.length; i++) {
+        $("#button" + (i + 1)).text(question.choices[i]);
+    }
   }
 
 }
@@ -21,8 +25,6 @@ var questions = [
 ];
 
 var quiz = new Quiz(questions);
-
-populate();
 $(document).ready(function(){
     populate();
 });

@@ -12,7 +12,8 @@ $page-margin: $total-page-spacing - $page-padding;
 // colors
 $white: #FFFFFF;
 $black: #000000;
-$blue: B2FFF6; 
+$blue: #B2FFF6; 
+$grey: #A2A2A2;
 
 // media queries
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
@@ -67,22 +68,6 @@ html, body {
     }
 
     background:     $white;
-}
-
-a 
-{
-
-  text-decoration: none;
-  display: inline;
-  color: $white;
-
-}
-
-a:hover 
-{
-  // !important overwrites the white color
-  color: #696969 !important;
-
 }
 
 .images
@@ -144,3 +129,66 @@ hr
     }
 }
 
+.buttons {
+  margin-top: 250px;
+  display: grid;
+  border: 2px solid;
+  height: 120px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  background: #F4F5EE;
+}
+
+#button1,#button2, #button3, #button4 {
+
+  background-color: $grey;
+  width: 150px;
+  font-size: 16px;
+  border: 1px solid $black;
+  border-radius: 50px;
+
+  margin-top:     $page-margin  / 5;
+  margin-bottom:  $page-margin  / 5;
+  margin-left:    $page-margin  / 5;
+  margin-right:   $page-margin  / 5;
+  padding-top:   $page-padding  * 2;
+
+ @media #{$tablet}
+ {
+     margin-left:    $page-margin  ;
+     margin-right:   $page-margin  ;
+     padding-left:   $page-padding ;
+     padding-right:  $page-padding ;
+ }
+
+ @media #{$desktop}
+ {
+     margin-left:    $page-margin;
+     margin-right:   $page-margin;
+     padding-left:   $page-padding;
+     padding-right:  $page-padding;
+ }
+
+}
+
+// changes the button color when you hover over it
+#button1:hover, #button2:hover, #button3:hover, #button4:hover {
+  
+  cursor: pointer;
+  background-color: #5C5C5C;
+
+}
+
+// gets rid of blue border when you click on a button
+#button1:focus, #button2:focus, #button3:focus, #button4:focus {
+
+  outline: 0;
+
+}
+.page #questions {
+
+  font-family: $main-font;
+  font-size: 20px;
+  color: $black;
+}

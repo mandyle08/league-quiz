@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Serif");
 html, body {
   font-family: "EB Garamond", serif;
-  background-color: B2FFF6;
+  background-color: #B2FFF6;
   color: #000000;
   font-size: 17px; }
 
@@ -35,14 +35,6 @@ html, body {
       padding-left: 3%;
       padding-right: 3%; } }
 
-a {
-  text-decoration: none;
-  display: inline;
-  color: #FFFFFF; }
-
-a:hover {
-  color: #696969 !important; }
-
 .images {
   display: flex;
   flex-direction: row;
@@ -71,7 +63,7 @@ hr {
   height: 5px;
   border: 0;
   padding: 0;
-  background-image: linear-gradient(B2FFF6, #FFFFFF);
+  background-image: linear-gradient(#B2FFF6, #FFFFFF);
   background-attachment: fixed;
   margin-left: -0.6%;
   margin-right: -0.6%; }
@@ -83,3 +75,49 @@ hr {
     hr {
       margin-left: -7.5%;
       margin-right: -7.5%; } }
+
+.buttons {
+  margin-top: 250px;
+  display: grid;
+  border: 2px solid;
+  height: 120px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  background: #F4F5EE; }
+
+#button1, #button2, #button3, #button4 {
+  background-color: #A2A2A2;
+  width: 150px;
+  font-size: 16px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  margin-top: 5.4%;
+  margin-bottom: 5.4%;
+  margin-left: 5.4%;
+  margin-right: 5.4%;
+  padding-top: 6%; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #button1, #button2, #button3, #button4 {
+      margin-left: 27%;
+      margin-right: 27%;
+      padding-left: 3%;
+      padding-right: 3%; } }
+  @media (min-width: 1024px) {
+    #button1, #button2, #button3, #button4 {
+      margin-left: 27%;
+      margin-right: 27%;
+      padding-left: 3%;
+      padding-right: 3%; } }
+
+#button1:hover, #button2:hover, #button3:hover, #button4:hover {
+  cursor: pointer;
+  background-color: #5C5C5C; }
+
+#button1:focus, #button2:focus, #button3:focus, #button4:focus {
+  outline: 0; }
+
+.page #questions {
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+  color: #000000; }

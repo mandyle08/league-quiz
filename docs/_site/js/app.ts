@@ -1,13 +1,13 @@
 function populate(){
 
   if(quiz.isEnded()){
-    
+
     //showScore();
 
   }else{
 
     // show the next question
-    var element = document.getElementById("questions");    
+    var element = document.getElementById("questions");
     element.innerHTML = quiz.getQuestionIndex().text;
   }
 
@@ -22,7 +22,6 @@ var questions = [
 
 var quiz = new Quiz(questions);
 
-populate();
 $(document).ready(function(){
     populate();
 });

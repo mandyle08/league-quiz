@@ -13,7 +13,6 @@ var questions = [
     new Question("Which tribe do the champions Anivia, Braum, Gragas, Nunu and Tryndamere belong to?", ["Frostguard", "Avarson", "Winter's Claw", "Storm Raiders"], "Avarson")
 ];
 var quiz = new Quiz(questions);
-populate();
 $(document).ready(function () {
     populate();
 });

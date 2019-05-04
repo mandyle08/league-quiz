@@ -130,7 +130,7 @@ hr
 }
 
 .buttons {
-  margin-top: 250px;
+  margin-top: 20px;
   display: grid;
   border: 2px solid;
   height: 120px;
@@ -165,8 +165,18 @@ hr
   outline: 0;
 }
 
-.page #questions {
+.question-container{
+
+  text-align:center;
+  display: inline-block;
+  line-height: 1.8;
+
+}
+
+#questions {
   font-family: $main-font;
   font-size: 20px;
   color: $black;
 }
+
+

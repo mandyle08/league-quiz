@@ -1,16 +1,31 @@
 function populate() {
     if (quiz.isEnded()) {
-        //showScore();
+        showScore();
     }
     else {
         // show the next question
-        var text = "";
-        var question = quiz.getQuestionIndex();
+        let text = "";
+        let question = quiz.getQuestionIndex();
         $("#questions").text(question.text);
-        for (var i = 0; i < question.choices.length; i++) {
+        // show the choices to choose
+        for (let i = 0; i < question.choices.length; i++) {
             $("#button" + (i + 1)).text(question.choices[i]);
+            // guessAnswer(choices[i]);
         }
     }
+}
+function guessAnswer(guess) {
+    $("#button").click();
+    {
+        // use the isCorrect function from controller to check
+        // the user's guess
+        quiz.isCorrect(guess);
+        populate();
+    }
+}
+function showScore() {
+    var totalScoreHTML = "<h1> Result </h>";
+    totalScoreHTML += "<h2 id = 'score'> Your score: " + quiz.score + "</h2>";
 }
 var questions = [
     new Question("When was League of Legends released?", ["2008", "2009", "2010", "2011"], "2009"),

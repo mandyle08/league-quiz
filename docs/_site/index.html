@@ -1,4 +1,4 @@
-<doctype html>
+<!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -6,9 +6,6 @@
         <link rel="stylesheet" href="/assets/css/styles.css">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/script_controller.js"></script>
-        <script src="js/app.js"></script>
     </head>
     <body>
         <div class=container>
@@ -18,14 +15,19 @@
                 <h1 id="league-of-legends-quiz-test">League of Legends Quiz Test</h1>
 
 
-                <p id="questions"></p>
-                <div class=buttons>
-                  <button id="button1"><span id="choice1"></span></button>
-                  <button id="button2"><span id="choice2"></span></button>
-                  <button id="button3"><span id="choice3"></span></button>
-                  <button id="button4"><span id="choice4"></span></button>
+                <div class=question-container>
+                  <p id="questions"></p>
                 </div>
+                  <div class=buttons>
+                    <button id="button1"><span id="choice1"></span></button>
+                    <button id="button2"><span id="choice2"></span></button>
+                    <button id="button3"><span id="choice3"></span></button>
+                    <button id="button4"><span id="choice4"></span></button>
+                  </div>
             </div>
         </div>
+        <script src="js/script.js"></script>
+        <script src="js/script_controller.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>

@@ -9,7 +9,7 @@ function Question(text, choices, answer)
 
 Question.prototype.correctAnswer = function(choice){
 
-  return choice == this.answer;
+  return this.answer == choice;
 
 }
 

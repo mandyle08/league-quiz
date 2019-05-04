@@ -77,7 +77,7 @@ hr {
       margin-right: -7.5%; } }
 
 .buttons {
-  margin-top: 250px;
+  margin-top: 20px;
   display: grid;
   border: 2px solid;
   height: 120px;
@@ -102,7 +102,12 @@ hr {
 .buttons button:focus {
   outline: 0; }
 
-.page #questions {
+.question-container {
+  text-align: center;
+  display: inline-block;
+  line-height: 1.8; }
+
+#questions {
   font-family: "PT Serif", serif;
   font-size: 20px;
   color: #000000; }

@@ -153,21 +153,19 @@ hr
 }
 
 // changes the button color when you hover over it
-#button1:hover, #button2:hover, #button3:hover, #button4:hover {
-
+.buttons button:hover
+{
   cursor: pointer;
   background-color: #5C5C5C;
-
 }
 
 // gets rid of blue border when you click on a button
-#button1:focus, #button2:focus, #button3:focus, #button4:focus {
-
+.buttons button:focus
+{
   outline: 0;
-
 }
-.page #questions {
 
+.page #questions {
   font-family: $main-font;
   font-size: 20px;
   color: $black;

@@ -95,11 +95,11 @@ hr {
   margin-top: 0.5em;
   margin-bottom: 0.5em; }
 
-#button1:hover, #button2:hover, #button3:hover, #button4:hover {
+.buttons button:hover {
   cursor: pointer;
   background-color: #5C5C5C; }
 
-#button1:focus, #button2:focus, #button3:focus, #button4:focus {
+.buttons button:focus {
   outline: 0; }
 
 .page #questions {

@@ -1,3 +1,4 @@
+// you need to define a Quiz class
 var quiz = new Quiz(questions);
 
 function populate() {

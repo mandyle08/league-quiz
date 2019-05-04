@@ -86,29 +86,14 @@ hr {
   justify-items: center;
   background: #F4F5EE; }
 
-#button1, #button2, #button3, #button4 {
+.buttons button {
   background-color: #A2A2A2;
   width: 150px;
   font-size: 16px;
   border: 1px solid #000000;
   border-radius: 50px;
-  margin-top: 5.4%;
-  margin-bottom: 5.4%;
-  margin-left: 5.4%;
-  margin-right: 5.4%;
-  padding-top: 6%; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    #button1, #button2, #button3, #button4 {
-      margin-left: 27%;
-      margin-right: 27%;
-      padding-left: 3%;
-      padding-right: 3%; } }
-  @media (min-width: 1024px) {
-    #button1, #button2, #button3, #button4 {
-      margin-left: 27%;
-      margin-right: 27%;
-      padding-left: 3%;
-      padding-right: 3%; } }
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
 
 #button1:hover, #button2:hover, #button3:hover, #button4:hover {
   cursor: pointer;

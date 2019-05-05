@@ -14,13 +14,16 @@ Quiz.prototype.getQuestionIndex = function() {
 
 Quiz.prototype.isEnded = function() {
 
-  return this.questions.length === this.questionIndex;
+  return this.questionIndex === this.questions.length;
 
 }
 
 Quiz.prototype.isCorrect = function(answer) {
 
-   if(this.getQuestionIndex.correctAnswer(answer)){
+    console.log("I have been called");
+
+   if(this.getQuestionIndex.correctAnswer == answer){
+    console.log("correct!");
      this.score++;
    }
 

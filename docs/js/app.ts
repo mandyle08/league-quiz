@@ -1,4 +1,4 @@
-function populate(){ 
+function populate(){
 
   if(quiz.isEnded()){
 
@@ -14,21 +14,14 @@ function populate(){
     // show the choices to choose
     for(let i = 0; i < question.choices.length; i++) {
         $("#button" + (i + 1)).text(question.choices[i]);
-       // guessAnswer(choices[i]);
+        $("#button" + (i + 1)).click(function() {
+          // use the isCorrect function from controller to check
+          // the user's guess
+          quiz.isCorrect(question.choices[i]);
+          populate();
+        });
     }
   }
-}
-
-function guessAnswer(guess) {
-
-    $("#button").click(){
-
-      // use the isCorrect function from controller to check
-      // the user's guess
-      quiz.isCorrect(guess);
-      populate();
-
-    }
 }
 
 function showScore() {

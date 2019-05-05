@@ -4,23 +4,22 @@ function populate() {
     }
     else {
         // show the next question
-        let text = "";
-        let question = quiz.getQuestionIndex();
-        $("#questions").text(question.text);
+        var text = "";
+        var question_1 = quiz.getQuestionIndex();
+        $("#questions").text(question_1.text);
+        var _loop_1 = function (i) {
+            $("#button" + (i + 1)).text(question_1.choices[i]);
+            $("#button" + (i + 1)).click(function () {
+                // use the isCorrect function from controller to check
+                // the user's guess
+                quiz.isCorrect(question_1.choices[i]);
+                populate();
+            });
+        };
         // show the choices to choose
-        for (let i = 0; i < question.choices.length; i++) {
-            $("#button" + (i + 1)).text(question.choices[i]);
-            // guessAnswer(choices[i]);
+        for (var i = 0; i < question_1.choices.length; i++) {
+            _loop_1(i);
         }
-    }
-}
-function guessAnswer(guess) {
-    $("#button").click();
-    {
-        // use the isCorrect function from controller to check
-        // the user's guess
-        quiz.isCorrect(guess);
-        populate();
     }
 }
 function showScore() {
